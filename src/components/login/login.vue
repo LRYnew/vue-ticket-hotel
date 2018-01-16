@@ -1,11 +1,11 @@
 <template>
-    <div class="login">
-      I am login
-    </div>
+  <div class="login">
+    I am login
+  </div>
 </template>
 
 <script type="text/ecmascript-6">
-    export default{};
+  export default {};
 </script>
 
 <style rel="stylesheet/stylus" lang="stylus">

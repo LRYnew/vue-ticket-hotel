@@ -1,13 +1,11 @@
 <template>
-    <div class="user">
-      I am user
-    </div>
+  <div class="user">
+    I am user
+  </div>
 </template>
 
 <script type="text/ecmascript-6">
-    export default{};
+  export default {};
 </script>
 
-<style rel="stylesheet/stylus" lang="stylus">
-
-</style>
+<style rel="stylesheet/stylus" lang="stylus"></style>

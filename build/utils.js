@@ -1,3 +1,5 @@
+//主要用于生成css loader和style loader的一些方法
+
 'use strict'
 const path = require('path')
 const config = require('../config')

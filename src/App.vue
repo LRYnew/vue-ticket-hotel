@@ -4,16 +4,16 @@
     <router-view></router-view>
     <!--底部导航-->
     <div class="tab-bar">
-      <router-link to="/home" class="tab-item home">
-        <div class="tab-icon"></div>
+      <router-link to="/home" class="tab-item">
+        <div class="tab-icon home"></div>
         <div class="tab-text">首页</div>
       </router-link>
-      <router-link to="/order" class="tab-item order">
-        <div class="tab-icon"></div>
+      <router-link to="/order" class="tab-item">
+        <div class="tab-icon order"></div>
         <div class="tab-text">订单</div>
       </router-link>
-      <router-link to="/user" class="tab-item user">
-        <div class="tab-icon"></div>
+      <router-link to="/user" class="tab-item">
+        <div class="tab-icon user"></div>
         <div class="tab-text">我的</div>
       </router-link>
     </div>
@@ -21,9 +21,9 @@
 </template>
 
 <script type="text/ecmascript-6">
-export default {
-  name: 'app'
-};
+  export default {
+    name: 'app'
+  };
 </script>
 
 <style rel="stylesheet/stylus" lang="stylus">
@@ -45,7 +45,26 @@ export default {
         justify-content center
         align-items center
         .tab-text
-          margin-top 9px
+          /*margin-top 9px*/
           font-size 12px
           color #7f7f7f
+        .tab-icon
+          width 25px
+          height 25px
+          background-repeat no-repeat
+          background-size 100% 100%
+          background-position center center
+        .home
+          background-image url('./assets/images/icon/home.png')
+        .order
+          background-image url('./assets/images/icon/order.png')
+        .user
+          background-image url('./assets/images/icon/user.png')
+      .tab-active
+        .home
+          background-image url('./assets/images/icon/home_active.png')
+        .order
+          background-image url('./assets/images/icon/order_active.png')
+        .user
+          background-image url('./assets/images/icon/user_active.png')
 </style>

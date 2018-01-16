@@ -31,7 +31,7 @@ const routes = [
 // 创建新的router对象
 const router = new Router({
   routes,
-  linkActiveClass: 'active'
+  linkActiveClass: 'tab-active'
 });
 
 // 输出
