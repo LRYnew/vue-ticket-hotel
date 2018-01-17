@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <!--页面内容-->
-    <router-view></router-view>
+    <transition name="switch" mode="out-in">
+      <router-view></router-view>
+    </transition>
     <!--底部导航-->
     <div class="tab-bar">
       <router-link to="/home" class="tab-item">
@@ -34,6 +36,7 @@
       position fixed
       left 0
       bottom 0
+      z-index 100
       width 100%
       height 56px
       background-color #fff
@@ -67,4 +70,10 @@
           background-image url('./assets/images/icon/order_active.png')
         .user
           background-image url('./assets/images/icon/user_active.png')
+        .tab-text
+          color #89cae6
+  .switch-enter-active, .switch-leave-active
+    transition all 0.2s linear
+  .switch-enter, .switch-leave-active
+    transform: translate3d(100%, 0, 0)
 </style>
