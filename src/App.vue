@@ -1,9 +1,5 @@
 <template>
   <div id="app">
-    <!--页面内容-->
-    <transition name="switch" mode="out-in">
-      <router-view></router-view>
-    </transition>
     <!--底部导航-->
     <div class="tab-bar">
       <router-link to="/home" class="tab-item">
@@ -19,6 +15,10 @@
         <div class="tab-text">我的</div>
       </router-link>
     </div>
+    <!--页面内容-->
+    <transition name="switch" mode="out-in">
+      <router-view></router-view>
+    </transition>
   </div>
 </template>
 

@@ -17,6 +17,7 @@ module.exports = {
 
     // 开发时候的访问域名。可以通过环境变量自己设置。
     host: 'localhost', // can be overwritten by process.env.HOST
+    // host: '192.168.0.103', // can be overwritten by process.env.HOST
     // 开发时候的端口。可以通过环境变量PORT设定。如果端口被占用了，会随机分配一个未被使用的端口
     port: 8080, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
     // 是否在浏览器自动打开

@@ -4,6 +4,7 @@ import Vue from 'vue';
 import App from './App';
 import router from './router/index';
 import Vuex from 'vuex';
+import 'babel-polyfill';
 
 Vue.use(Vuex);
 

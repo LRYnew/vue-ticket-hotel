@@ -1,13 +1,13 @@
 <template>
-  <div class="tooltip">
+  <div class="tooltip" v-show="isShow">
     <div class="tooltip-box">
       <div class="tooltip-text">
         <div class="parent-text">{{parentText}}</div>
         <div class="child-text">{{childText}}</div>
       </div>
       <div class="btn-box">
-        <div class="btn btn-cancel">{{cancelText}}</div>
-        <div class="btn btn-success">{{successText}}</div>
+        <div class="btn btn-cancel" @click.stop="hide">{{cancelText}}</div>
+        <div class="btn btn-success" @click.stop="success">{{successText}}</div>
       </div>
     </div>
   </div>
@@ -26,6 +26,23 @@
       },
       parentText: String,
       childText: String
+    },
+    data() {
+      return {
+        isShow: false
+      };
+    },
+    methods: {
+      show() {
+        this.isShow = true;
+      },
+      hide() {
+        this.isShow = false;
+      },
+      success() {
+        this.$emit('success');
+        this.hide();
+      }
     }
   };
 </script>
@@ -41,7 +58,7 @@
     left 0
     right 0
     z-index 1000
-    background-color rgba(0,0,0,0.6)
+    background-color rgba(0, 0, 0, 0.6)
     .tooltip-box
       width 72vw
       height 150px
@@ -55,12 +72,15 @@
         height 100px
         border-bottom 1px solid #9ea4b4
         .parent-text
-          font-size 14px
+          font-size 16px
+          font-weight 600
           line-height 20px
           color #5b5b5b
           text-align center
         .child-text
-          font-size 12px
+          font-size 14px
+          font-weight 600
+          line-height 20px
           text-align center
           color #5b5b5b
       .btn-box

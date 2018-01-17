@@ -37,7 +37,7 @@ module.exports = {
   context: path.resolve(__dirname, '../'),
   // 入口文件
   entry: {
-    app: './src/main.js'
+    app: ["babel-polyfill", "./src/main.js"]
   },
   // 输出配置
   output: {

@@ -15,16 +15,15 @@
           <div class="nav-text">景点门票预订</div>
         </div>
       </div>
-      <div class="concat">联系客服</div>
-      <tooltip></tooltip>
     </div>
+    <concact></concact>
   </div>
 </template>
 
 <script type="text/ecmascript-6">
   import topBar from 'components/topBar/topBar';
   import swiperComponent from 'components/swiper/swiper';
-  import tooltip from 'components/tooltip/tooltip';
+  import concact from 'components/concact/concact';
   export default {
     data() {
       return {};
@@ -32,7 +31,7 @@
     components: {
       topBar,
       swiperComponent,
-      tooltip
+      concact
     }
   };
 </script>
