@@ -21,7 +21,6 @@
         this.$refs.tooltip.show();
       },
       callPhone() {
-        console.log('拨打' + this.childText);
         window.location.href = 'tel:' + this.childText;
       }
     },

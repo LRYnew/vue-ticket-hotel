@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <topBar top-title="海南每日易购" show-back show-setting></topBar>
+    <topBar top-title="海南每日易购" :show-back="showBack" :show-setting="showSetting"></topBar>
     <div class="container">
       <div class="top-ad">
         <swiperComponent></swiperComponent>
@@ -26,7 +26,10 @@
   import concact from 'components/concact/concact';
   export default {
     data() {
-      return {};
+      return {
+        showBack: false,
+        showSetting: false
+      };
     },
     components: {
       topBar,

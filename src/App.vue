@@ -72,8 +72,9 @@
           background-image url('./assets/images/icon/user_active.png')
         .tab-text
           color #89cae6
-  .switch-enter-active, .switch-leave-active
+  /*.switch-enter-active, .switch-leave-active
     transition all 0.2s linear
   .switch-enter, .switch-leave-active
-    transform: translate3d(100%, 0, 0)
+    transform translate3d(100%, 0, 0)
+    opacity 0.5*/
 </style>
