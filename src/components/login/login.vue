@@ -49,12 +49,13 @@
       flex-direction column
       justify-content center
       align-items center
-      position fixed
+      position absolute
       left 0
       right 0
-      top 40px
-      bottom 56px
+      top 0
+      bottom 0
       z-index 99
+      /*padding 40px 0px 0px 0px*/
       background-image url("./image/bg.png")
       background-repeat no-repeat
       background-size 100% 100%
@@ -71,6 +72,7 @@
         flex-direction column
         width 76.3vw
         .box-input
+          flex 0 0 39px
           display flex
           flex-direction row
           margin-bottom 1.87vh
@@ -95,6 +97,7 @@
             color #fff
             background-color transparent
         .box-note
+          flex 0 0 16px
           margin-bottom 18vh
           padding-right 15px
           width 100%
@@ -105,8 +108,8 @@
             color #f1f1f1
             letter-spacing 2px
         .box-login
+          flex 0 0 36px
           width 100%
-          height 36px
           font-size 16px
           font-weight 600
           color #fff
@@ -116,6 +119,7 @@
           border-radius 30px
           background-color rgba(255,255,255,0.4)
         .box-bottom
+          flex 0 0 40px
           display flex
           justify-content flex-end
           align-items center
@@ -134,4 +138,7 @@
             background-image url("./image/wx.png")
             background-size 100% 100%
             background-repeat no-repeat
+  #app
+    .tab-bar
+      display none
 </style>

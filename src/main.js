@@ -5,8 +5,11 @@ import Vue from 'vue';
 import App from './App';
 import router from './router/index';
 import Vuex from 'vuex';
+// import VCconsole from 'vconsole';
 
 Vue.use(Vuex);
+/* eslint-disable no-unused-vars  */
+// var vConsole = new VCconsole();
 
 Vue.config.productionTip = false;
 
